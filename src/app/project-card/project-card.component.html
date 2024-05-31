@@ -2,12 +2,15 @@
     <div class="card-body">
         <h5 class="card-title">{{projectData.projectName}}</h5>
         <p class="card-text">{{projectData.summary}}</p>
-        <button class="btn btn-primary">View More</button>
+        <button class="btn btn-primary" (click)="openProjectModal()">View More</button>
     </div>
 
     <div class="card-footer">
         <div class="d-flex flex-wrap justify-content-center">
-            <div *ngFor="let tag of projectData.tags"  class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag}}</div>
+            <div *ngFor="let tag of projectData.tags">
+                <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag}}
+                </div>
+            </div>
         </div>
     </div>
 </div>

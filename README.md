@@ -1,6 +1,29 @@
-# TempProject
+# PersonalPortfolioProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
+## Project Overview
+
+This project is an Angular application that leverages `ngx-bootstrap` for styling and UI components. It includes modal popups, image slideshows, and routing for navigation between pages. Below is a detailed list of the features and technologies used in this project.
+
+### Features
+
+- **Angular Version**: The project is built using Angular version 16.2.7.
+- **Node.js Version**: The project is developed using Node.js version 10.2.1.
+- **Styling and UI Components**: Utilizes `ngx-bootstrap` for CSS styling and various UI components.
+- **Modal Popups**: Implements modal popups using `ModalModule` from `ngx-bootstrap`.
+- **Image Slideshows**: Includes image slideshows with the `CarouselModule` from `ngx-bootstrap`.
+- **Routing**: Uses Angular's routing module to navigate between different pages.
+
+
+### Installation and Setup
+
+To set up the project locally, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   Run `npm install` for installing all dependencies. 
+
 
 ## Development server
 

@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ProjectData } from '../models/project-data';
+import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
+import { ProjectModalComponent } from '../project-modal/project-modal.component';
 
 @Component({
   selector: 'app-project-card',
@@ -17,5 +19,20 @@ export class ProjectCardComponent {
     tags:[],
     pictures:[]
   };
+  bsModalRef?: BsModalRef
+
+  constructor(private modalService:BsModalService){
+
+  }
+
+  openProjectModal(){
+    const modalOptions:ModalOptions = {
+      class: "modal-lg",
+      initialState: {
+        project: this.projectData
+      }
+    };
+    this.bsModalRef = this.modalService.show(ProjectModalComponent, modalOptions);
+  }
 
 }

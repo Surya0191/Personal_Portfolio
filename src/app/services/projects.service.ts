@@ -40,9 +40,9 @@ export class ProjectsService {
       projectName: "Portfolio Website",
       summary: "A personal portfolio website to showcase projects and skills.",
       projectDescription: "This is a responsive website that includes sections for a resume, project showcase, and contact information.",
-      projectLink: "https://github.com/example/portfolio-website",
+      projectLink: "https://github.com/Surya0191/Personal_Portfolio",
       tags: [Tag.HTML, Tag.CSS, Tag.JavaScript],
-      pictures: ["https://example.com/images/portfolio1.png", "https://example.com/images/portfolio2.png"]
+      pictures: ["../../assets/Project_Image1.png", "../../assets/Project_Image2.png","../../assets/Project_Image3.png","../../assets/Project_Image4.png"]
     },
     {
       id: 4,

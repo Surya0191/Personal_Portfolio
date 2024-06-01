@@ -1,4 +1,49 @@
 <div class="container">
+
+    <div class="mb-2">
+        <div>
+            <div class="btn btn-primary mb-2 me-2" (click)="isCollapsed = !isCollapsed">Filter</div>
+            <div *ngIf="filtering" class="btn btn-secondary mb-2" (click)="resetFilter()">Reset</div>
+        </div>
+        <div [collapse]="isCollapsed" [isAnimated]="true">
+            <div class="border mb-2 shadow-sm" style="width: 350px;">
+            <form action="">
+                <div class="row mx-0">
+                    <div class="col">
+                        <small><b>Languages:</b></small>
+                        <div class="form-group">
+                            <div *ngFor="let language of filterItems.languages" class="form-check">
+                                <input 
+                                #checkbox
+                                type="checkbox"
+                                class="form-check-input position-static me-2"
+                                (change)="filter($event,language)"
+                                name={{language}}>
+                                <label class="form-check-label">{{language}}</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <small><b>Frameworks:</b></small>
+                        <div class="form-group">
+                            <div *ngFor="let framework of filterItems.frameworks" class="form-check">
+                                <input 
+                                #checkbox
+                                type="checkbox"
+                                class="form-check-input position-static me-2"
+                                (change)="filter($event, framework)"
+                                name={{framework}}>
+                                <label class="form-check-label">{{framework}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div *ngFor="let projectData of projectsData" class="col-lg-4 col-md-6 mb-4" style="max-width: 380px; min-width: 380px;">
             <app-project-card [projectData] = "projectData"></app-project-card>

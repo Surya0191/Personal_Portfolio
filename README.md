@@ -9,9 +9,10 @@ This project is an Angular application that leverages `ngx-bootstrap` for stylin
 - **Angular Version**: The project is built using Angular version 16.2.7.
 - **Node.js Version**: The project is developed using Node.js version 10.2.1.
 - **Styling and UI Components**: Utilizes `ngx-bootstrap` for CSS styling and various UI components.
+- **Routing**: Uses Angular's routing module to navigate between different pages.
 - **Modal Popups**: Implements modal popups using `ModalModule` from `ngx-bootstrap`.
 - **Image Slideshows**: Includes image slideshows with the `CarouselModule` from `ngx-bootstrap`.
-- **Routing**: Uses Angular's routing module to navigate between different pages.
+- **Filtering**: Implements filtering using `CollapseModule` and `FormModule`.
 
 
 ### Installation and Setup

@@ -13,6 +13,7 @@ This project is an Angular application that leverages `ngx-bootstrap` for stylin
 - **Modal Popups**: Implements modal popups using `ModalModule` from `ngx-bootstrap`.
 - **Image Slideshows**: Includes image slideshows with the `CarouselModule` from `ngx-bootstrap`.
 - **Filtering**: Implements filtering using `CollapseModule` and `FormModule`.
+- **dropdowns**: Implements dropdowns in resume section using `AccordionModule`.
 
 
 ### Installation and Setup
@@ -21,7 +22,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Surya0191/Personal_Portfolio.git
    cd your-repo-name
    Run `npm install` for installing all dependencies. 
 

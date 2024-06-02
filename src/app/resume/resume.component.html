@@ -1,1 +1,120 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <div class="btn btn-primary mb-5 shadow border" (click)="downloadFile()">Download PDF Resume</div>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group #workExperience>
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">.</div>
+                    <div class="btn-link">Work Experience</div>
+                    <i style="color: white;" class="bi" [ngClass]="{'bi-chevron-down': !workExperience?.isOpen, 'bi-chevron-up': workExperience?.isOpen}"></i>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer - 1</h2>
+                    <h3 class="text-primary">Inrhythm Solutions</h3>
+                    <ul>
+                        <li>Involved in the creation of captivating userinterfaces forthe innovative reporting
+                            and visualization product, ”Dhiva.” Translated intricate UI/UX design
+                            wireframes into functional code, leveraging Angular, HTML, CSS, and
+                            TypeScript to enhance user experiences.</li>
+                        <li>Collaborated seamlessly with back-end development teams to seamlessly
+                            integrate front-end solutions, ensuring the alignment with userrequirements
+                            and a cohesive user experience.</li>
+                        <li>Played a pivotalrole in the automation testing of the application using Cypress,
+                            enhancing the reliability and efficiency of quality assurance processes.
+                            • Actively engaged in Agile Development methodologies, participating in scrum
+                            and story grooming meetings, fostering effective communication, and adapting
+                            to dynamic projectrequirements.</li>
+                        <li>Demonstrated problem-solving skills by swiftly identifying and resolving
+                            high-priority bugs, consistently delivering top-quality solutions within tight
+                            timelines.</li>
+                        <li>Leveraged coding skills to refactor existing codebase, optimizing the product’s
+                            performance, and maintaining its scalability.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group #education>
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">.</div>
+                    <div class="btn-link">Education</div>
+                    <i style="color: white;" class="bi" [ngClass]="{'bi-chevron-down': !education?.isOpen, 'bi-chevron-up': education?.isOpen}"></i>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">M.S in Computer Science</h2>
+                    <h3 class="text-primary">University of North Texas</h3>
+                    <ul>
+                        <li>Aug 2023 - May 2025 | Denton, TX</li>
+                        <li>CGPA: 3.66 / 4</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">B.E in Electronics</h2>
+                    <h3 class="text-primary">MVSR Engineering College</h3>
+                    <ul>
+                        <li>Aug 2017 - Aug 2021 | Hyderabad, Ind</li>
+                        <li>GPA: 7.59 / 10</li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">MPC</h2>
+                    <h3 class="text-primary">Narayana Junior College</h3>
+                    <ul>
+                        <li>Aug 2015 - Aug 2017 | Hyderabad, Ind</li>
+                        <li>Percentage: 98</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group #skills>
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">.</div>
+                    <div class="btn-link">Skills</div>
+                    <i style="color: white;" class="bi" [ngClass]="{'bi-chevron-down': !skills?.isOpen, 'bi-chevron-up': skills?.isOpen}"></i>
+                </button>
+                <div class="row" style="text-align: left;">
+                <div class="col">
+                    <h4>Programming Languages:</h4>
+                    <ul>
+                        <li>C</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Frameworks:</h4>
+                    <ul>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Web Development Techs:</h4>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>TypeScript</li>
+                        <li>Bootstrap</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Cypress</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>SW Development Tools:</h4>
+                    <ul>
+                        <li>Visual Studio</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Familiar:</h4>
+                    <ul>
+                        <li>OOPS</li>
+                        <li>Batch Programming</li>
+                        <li>CICD</li>
+                        <li>Chrome Devtools</li>
+                    </ul>
+                </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>

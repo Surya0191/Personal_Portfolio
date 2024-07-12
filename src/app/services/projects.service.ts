@@ -16,10 +16,12 @@ export class ProjectsService {
       projectDescription:
         'This app helps find ingredients using recipes and add items accordingly to the cart.',
       projectLink: 'https://github.com/Surya0191/Grocery_Shopping_App',
+      projectUrl:'https://recipe-grocery-shopping.netlify.app/auth',
       tags: [Tag.HTML, Tag.CSS, Tag.Typescript, Tag.Angular],
       pictures: [
         '../../assets/Project_Images/0/0_image_1.png',
-        '../../assets/Project_Images/0/0_image_2.png'
+        '../../assets/Project_Images/0/0_image_2.png',
+        '../../assets/Project_Images/0/0_image_3.png'
       ],
     },
     {
@@ -29,6 +31,7 @@ export class ProjectsService {
       projectDescription:
         'This is a responsive website that includes sections for a resume, project showcase, and contact information.',
       projectLink: 'https://github.com/Surya0191/Personal_Portfolio',
+      projectUrl:'https://surya-shetti-portfolio.netlify.app/home',
       tags: [Tag.HTML, Tag.CSS, Tag.Typescript, Tag.Angular],
       pictures: [
         '../../assets/Project_Images/1/1_image_1.png',

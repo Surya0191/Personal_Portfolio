@@ -40,6 +40,21 @@ export class ProjectsService {
         '../../assets/Project_Images/1/1_image_4.png'
       ],
     },
+    {
+      id: 1,
+      projectName: 'Kanban Visual Board',
+      summary: 'Kanban is a visual management system that helps teams visualize their work.',
+      projectDescription:
+        'This project uses Angular 18 and integrates the drag-and-drop module from Angular CDK using the Drag&Drop connected sorting group method. Kanban is a visual management system that helps teams visualize their work, manage their workflow, and improve efficiency.',
+      projectLink: 'https://github.com/Surya0191/kanban',
+      projectUrl:'https://kanban-visual-board.netlify.app/',
+      tags: [Tag.HTML, Tag.CSS, Tag.Typescript, Tag.Angular],
+      pictures: [
+        '../../assets/Project_Images/2/2_image_1.png',
+        '../../assets/Project_Images/2/2_image_2.png',
+        '../../assets/Project_Images/2/2_image_3.png'
+      ],
+    }
   ];
 
   constructor() {}

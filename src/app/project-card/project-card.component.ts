@@ -15,6 +15,7 @@ export class ProjectCardComponent {
     projectName:"Sample Project",
     summary:"",
     projectDescription:"This is a sample project",
+    keyFeatures:[],
     projectLink:"",
     projectUrl:"",
     tags:[],

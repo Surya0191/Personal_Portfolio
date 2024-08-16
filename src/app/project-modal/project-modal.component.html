@@ -14,8 +14,13 @@
 
     <h3 class="mt-2">Description</h3>
     <p>{{project.projectDescription}}</p>
+    <h4 class="mt-2">Key Features</h4>
+    <ul>
+        <li *ngFor="let feature of project.keyFeatures">{{feature}}</li>
+    </ul>
     <p>You can find this project on Github <a href={{project.projectLink}} target="_blank">here</a></p>
     <p>You can find live project here <a href={{project.projectUrl}} target="_blank">here</a></p>
+
 
     <hr>
     <div class="d-flex flex-wrap">

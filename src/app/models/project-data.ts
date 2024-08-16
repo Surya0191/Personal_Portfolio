@@ -5,6 +5,7 @@ export interface ProjectData {
     projectName:string;
     summary:string;
     projectDescription:string;
+    keyFeatures:string[];
     projectLink:string;
     projectUrl:string
     tags:Tag[];
